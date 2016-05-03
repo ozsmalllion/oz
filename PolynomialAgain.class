@@ -33,7 +33,65 @@ public class PolynomialAgain {
 				low = i;
 			}			
 		}
-				
+		for(int i = first.length - 1;i>=0;i--){
+			if(i != low){
+				if(first[i] == 1){
+					if(i==0){
+						System.out.print( "1");
+					}else if(i==1){
+						System.out.print( "x"  + "+");
+					}else{
+						System.out.print( "x" + i + "+");
+					}
+				}else if(first[i] == -1){
+					if(i==0){
+						System.out.print( "-1");
+					}else if(i==1){
+						System.out.print( "-" + "x"  + "+");
+					}else{
+						System.out.print( "-" + "x" + i + "+");
+					}
+				}else if(first[i] == 0){
+					//System.out.print( "");
+				}else{
+					if(i==0){
+						System.out.print( first[i] + "+");
+					}else if(i==1){
+						System.out.print( first[i]  + "x"  + "+");
+					}else{
+						System.out.print(first[i] + "x" + i + "+");
+					}				
+				}
+			}else{
+				if(first[i] == 1){
+					if(i==0){
+						System.out.print( "1");
+					}else if(i==1){
+						System.out.print( "x"  );
+					}else{
+						System.out.print( "x" + i );
+					}
+				}else if(first[i] == -1){
+					if(i==0){
+						System.out.print( "-1");
+					}else if(i==1){
+						System.out.print( "-" + "x"  );
+					}else{
+						System.out.print( "-" + "x" + i );
+					}
+				}else if(first[i] == 0){
+					System.out.print( "0");
+				}else{
+					if(i==0){
+						System.out.print( first[i] );
+					}else if(i==1){
+						System.out.print( first[i]  + "x"  );
+					}else{
+						System.out.print(first[i] + "x" + i );
+					}				
+				}
+			}
+		}		
 		in.close();
 	}
 }
