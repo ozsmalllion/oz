@@ -1,0 +1,35 @@
+package chapter4;
+
+import java.util.Scanner;
+/**
+ * 
+ * @author ozsmalllion
+ *
+ */
+public class PolynomialAgain {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);		
+		int[] first=new int[101];
+		int polynomials = 0;
+		int data1;
+		int data2;
+		int low = 100;
+		while(true){
+			data1 = in.nextInt();
+			data2 = in.nextInt();
+			if(data1 == 0 ){
+				first[data1]=first[data1] + data2;
+				polynomials++;	
+			}else{
+				first[data1]=first[data1] + data2;
+			}
+			if(polynomials == 2){
+				break;
+			}
+		}			
+		
+				
+		in.close();
+	}
+}
